@@ -89,4 +89,4 @@ DEFAULT_REQUEST_HEADERS = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 LOG_LEVEL = 'INFO'
 LOG_FILE = "default.log"
-RETRY_TIMES = 5
+RETRY_TIMES = 4
