@@ -3,13 +3,18 @@ scrapy_easy
 scrapy简单入门教学  
 目前仅针对实例操作抓取的教学  
 
-终端操作  
+前期准备
+安装scrapy
+pip install scrapy / pycharm包管理工具安装  
+
 创建爬虫项目   
 scrapy startproject xxx  
 cd xxx  
+
 创建爬虫文件 系统模板没啥用 可以自定义   
 scrapy genspider example example.com  
 
+执行爬虫文件  
 entrypoint为执行程序，代码中输入爬虫名字执行  
 
 fy_spider为接口案例  
