@@ -1,6 +1,8 @@
 import scrapy
 import logging
 
+from loguru import logger
+
 
 def gen_next_page_url(page_no, list_url):
     use_url = list_url.replace(".htm", "")
@@ -11,7 +13,7 @@ def gen_next_page_url(page_no, list_url):
     return res_url
 
 
-class MzlggzySpiderSpider(scrapy.Spider):
+class MzlggzySpider(scrapy.Spider):
     name = 'mzlggzy_spider'  # 爬虫名
     start_urls = 'http://www.mzlggzy.org.cn/engconstTender/index.htm'  # 需要爬取的列表页
     total_page = 10
@@ -67,7 +69,7 @@ class MzlggzySpiderSpider(scrapy.Spider):
         :param kwargs:
         :return:
         """
-        print(response.url)
+        logger.info(response.url)
         news_content = response.xpath("//div[@class='detail-con1']").extract()
         content = "".join(news_content).strip()
         attachments = []
@@ -83,7 +85,7 @@ class MzlggzySpiderSpider(scrapy.Spider):
         item = {
             'url': response.url,
             'title': kwargs['info_title'],
-            'content': '正文',#正文太长了就不写进去了 换成content就能看
+            'content': '正文',  # 正文太长了就不写进去了 换成content就能看
             'attachments_ary': attachments
         }
         logging.info(item)  # 结果放在default.log
