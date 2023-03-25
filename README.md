@@ -1,7 +1,7 @@
 # scrapy_test
 scrapy_easy
 scrapy简单入门教学
-
+目前仅针对实例操作抓取的教学
 
 终端操作
 创建爬虫项目 
