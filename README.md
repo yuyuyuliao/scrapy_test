@@ -22,3 +22,6 @@ middleware 中间件可以用来设置例如请求重试，请求加代理等功
 pipelines 用作数据库传输
 stool 链接数据库
 settings  用于对爬虫任务做一些设置  例如 速率,执行目录,管道开关,中间件使用,日志存放等
+
+
+维护者 @yuyuyuliao
