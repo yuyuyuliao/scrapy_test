@@ -17,9 +17,11 @@ scrapy genspider example example.com
 执行爬虫文件  
 entrypoint为执行程序，代码中输入爬虫名字执行  
 
+教学案例  
+教学案例没有数据库  作为简单入门教学 从理解如何使用scrapy抓取网页开始  
+easy_spider为教学案例 框架为scrapy自主生成没有任何修改 
 fy_spider为接口案例  
 mzlggzy_spider为html案例  
-教学案例没有数据库  作为简单入门教学 从理解如何使用scrapy抓取网页开始  
 items middlewares pipelines settings stool各有功能  
 items 用于定义抓取结果 需要存放的字段  
 middleware 中间件可以用来设置例如请求重试，请求加代理等功能   
