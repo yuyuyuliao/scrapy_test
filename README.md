@@ -18,8 +18,8 @@ scrapy genspider example example.com
 entrypoint为执行程序，代码中输入爬虫名字执行  
 
 教学案例  
-教学案例没有数据库  作为简单入门教学 从理解如何使用scrapy抓取网页开始  
-easy_spider为教学案例 框架为scrapy自主生成没有任何修改 
+教学案例没有数据库  作为简单入门教学 从理解如何使用scrapy抓取网页开始    
+easy_spider为教学案例 框架为scrapy自主生成没有任何修改  
 fy_spider为接口案例  
 mzlggzy_spider为html案例  
 items middlewares pipelines settings stool各有功能  
