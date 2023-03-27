@@ -40,6 +40,21 @@ main分支为主要分支，作为线上分支，本地不能也不建议去修�
 
 切记 切记 切记 不要修改main分支！！！！！！！！！！！
 
-维护者 @yuyuyuliao
+git 命令
+git clone  克隆代码  
+git commit 提交代码  
+git push 推送代码  
+维护者 @yuyuyuliao  
+
+
+scrapy 特点：  
+
+
+scrapy 运行流程：  
+
+
+scrapy 案例:
+https://www.whb.cn/zhuzhan/sz/index.html 5页 url title content
+https://www.szggzy.com/jygg/list.html 2页 url title content
 
 
