@@ -56,6 +56,6 @@ scrapy 运行流程：
 scrapy 案例:    
 
 https://www.whb.cn/zhuzhan/sz/index.html 5页 url title content  
-https://www.szggzy.com/jygg/list.html 2页 url title content
+https://www.szggzy.com/jygg/list.html 2页 url title content 
 
 
