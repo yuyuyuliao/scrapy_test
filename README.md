@@ -48,10 +48,15 @@ git push 推送代码
 
 
 scrapy 特点：  
-
+1.集成化：scrapy框架提供了非常多的组件，item文件可以设置需要存放的参数，pipeline文件可以发送生成的Item文件，Middleware中间件可以设置各种处理逻辑（代理，重试逻辑）
+2.异步：scrapy使用了twisted异步网络框架来处理网络通讯，可以调用多个线程进行抓取，相比于传统的requests的同步抓取能够提高不少效率
+3.自定义能力强：对scrapy可以设置很多功能如自动生成代码模板、设置各种检测机制，减轻代码编写和检查压力
 
 scrapy 运行流程：  
-
+1.从Spider通过Engine将start_url发送给scheduler进行调度
+2.Scheduler将url请求通过engine(downloader middleware)发送给Downloader,前往对应地址并下载获取Response
+3.Response结果再返回给Spider通过parse()解析，将得到的结果封装成为Item传递给Pipeline使得到的结果持久化
+4.如果解析结果仍然包含url，则重复先前操作，直到Scheduler中不再有剩余的url
 
 scrapy 案例:    
 
