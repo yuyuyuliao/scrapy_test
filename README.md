@@ -44,7 +44,7 @@ git 命令
 git clone  克隆代码  
 git commit 提交代码  
 git push 推送代码  
-维护者 @yuyuyuliao  
+维护者 @yuyuyuliao @momoluo 
 
 
 scrapy 特点：  
