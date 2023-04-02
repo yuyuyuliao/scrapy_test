@@ -8,8 +8,8 @@ from scrapy.http import JsonRequest
 class FySpider(scrapy.Spider):
     name = "fy_spider"
     # 网页地址
-    site = "https://jyzx.fy.gov.cn/#/tradeInfo?collapseInd=1&currentGGInd=0&currentPInd=0&currentYm=1&num=1&publishTimeStart=&publishTimeEnd=",
-    post_url = "https://jyzx.fy.gov.cn/fyggfwpt-api-home-web/menhuJyxx/list"
+    site = "https://www.szggzy.com/jygg/list.html",
+    post_url = "https://www.szggzy.com/cms/api/v1/trade/content/page"
     post_data = {
         "pageNo": 1,
         "pageSize": 10,
