@@ -29,7 +29,6 @@ pipelines 用作数据库传输
 stool 链接数据库  
 settings  用于对爬虫任务做一些设置  例如 速率,执行目录,管道开关,中间件使用,日志存放等  
 
-维护者 @yuyuyuliao 
 
 
 scrapy 特点：  
